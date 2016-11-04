@@ -55,9 +55,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             Method methodGetIntent = loadedClass.getMethod("getIntent", java.lang.String.class);
             Object object = loadedClass.newInstance();
-            Intent intent = (Intent) methodGetIntent.invoke(object, "activity");
+            Intent intent = (Intent) methodGetIntent.invoke(object, "service");
             if (intent!=null) {
-                startActivity(intent);
+                startService(intent);
             }
 
 
