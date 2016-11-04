@@ -29,9 +29,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void loadCode(){
         // read the jar file which contains classes.dex file.
         // You can download the file from any source, SD card or internet.
-        // This exaple reads the JAR file from Download folder of the sd_card
+        // This example reads the JAR file from Download folder of the sd_card
 
 //        String jarContainerPath =  Environment.getExternalStorageDirectory().getAbsolutePath() + "/Download/example.jar";
+
+
 
         //avd_nexus4_sdcard is a shared folder in my Genymotion emulator
         String jarContainerPath =  "/mnt/shared/avd_nexus4_sdcard/dexHiddenBehavior.jar";
